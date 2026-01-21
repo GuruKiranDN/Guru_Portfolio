@@ -4,9 +4,9 @@
   --color-primary-light: #3c3c3c;
   --color-primary-dark: #000000;
   
-  --color-secondary: #6094FF;
-  --color-secondary-light: #82AAFF;
-  --color-secondary-dark: #3E7EFF;
+  --color-secondary: rgb(255, 213, 136);
+  --color-secondary-light: rgb(255, 213, 136);
+  --color-secondary-dark: rgb(255, 213, 136);
 
   --color-accent: #3c3c3c;
   --color-accent-light: #4a4a4a;

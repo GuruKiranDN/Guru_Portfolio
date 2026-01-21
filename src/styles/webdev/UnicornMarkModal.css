@@ -1,0 +1,12 @@
+/* Unicorn Mark Modal Specific Styles */
+.unicorn-mark-modal .webdev-images-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+.unicorn-mark-modal .webdev-image-wrapper {
+  background-color: var(--bg-secondary);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+}
+

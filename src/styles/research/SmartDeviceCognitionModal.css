@@ -1,0 +1,35 @@
+/* Smart Device Cognition Modal Specific Styles */
+.smart-device-cognition-modal .research-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smart-device-cognition-modal .research-questions-list {
+  gap: var(--space-3);
+}
+
+.smart-device-cognition-modal .research-question-item {
+  border-left-color: var(--color-secondary);
+}
+
+.smart-device-cognition-modal .question-type {
+  color: var(--color-secondary);
+}
+
+.smart-device-cognition-modal .materials-table {
+  box-shadow: var(--shadow-sm);
+}
+
+.smart-device-cognition-modal .materials-table th:first-child {
+  width: 25%;
+}
+
+.smart-device-cognition-modal .materials-table th:nth-child(2) {
+  width: 20%;
+}
+
+.smart-device-cognition-modal .materials-table th:last-child {
+  width: 55%;
+}
+

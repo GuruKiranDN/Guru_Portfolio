@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sun, Moon } from 'lucide-react';
+import logo from './logo/Logo.svg';
 import '../styles/Navigation.css';
 
 interface NavigationProps {
@@ -9,7 +9,6 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLightTheme, setIsLightTheme] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,23 +28,19 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
     }
   };
 
-  const toggleTheme = () => {
-    setIsLightTheme(!isLightTheme);
-  };
-
   const navStyle = {
-    backgroundColor: isLightTheme ? '#FFD588' : '#6094FF',
+    backgroundColor: 'rgb(255, 213, 136)',
   };
 
   const textStyle = {
-    color: isLightTheme ? '#1B1B1B' : '#FFFFFF',
+    color: '#000000',
   };
 
   return (
     <header className={`navigation ${isScrolled ? 'scrolled' : ''}`} style={navStyle}>
       <div className="container nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('home')}>
-          <span className="logo-text" style={textStyle}>GDN</span>
+          <img src={logo} alt="Logo" className="logo-image" />
         </div>
         
         <button 
@@ -102,18 +97,6 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
               </a>
             </li>
           </ul>
-          <div className="theme-switch">
-            {isLightTheme ? <Moon size={18} style={textStyle} /> : <Sun size={18} style={{ color: '#FFFFFF' }} />}
-            <label className="switch-label">
-              <input
-                type="checkbox"
-                className="switch-input"
-                checked={!isLightTheme}
-                onChange={toggleTheme}
-              />
-              <span className="switch-slider"></span>
-            </label>
-          </div>
         </nav>
       </div>
     </header>

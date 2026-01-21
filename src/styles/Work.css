@@ -43,14 +43,14 @@
 }
 
 .category-filter:hover {
-  background-color: var(--color-secondary-dark);
-  color: var(--color-primary);
+  background-color: rgb(255, 213, 136);
+  color: var(--color-black);
 }
 
 .category-filter.active {
-  background-color: #6094FF;
-  color: #1B1B1B;
-  border-color: #6094FF;
+  background-color: rgb(255, 213, 136);
+  color: #000000;
+  border-color: rgb(255, 213, 136);
 }
 
 .search-container {
@@ -71,14 +71,39 @@
 
 .search-input:focus {
   outline: none;
-  border-color: var(--color-secondary);
-  box-shadow: 0 0 0 3px rgba(96, 148, 255, 0.1);
+  border-color: rgb(255, 213, 136);
+  box-shadow: 0 0 0 3px rgba(255, 213, 136, 0.2);
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: var(--space-4);
+}
+
+.research-section,
+.webdev-section {
+  margin-top: var(--space-6);
+}
+
+.subsection-title {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+  color: var(--text-primary);
+  text-align: left;
+  position: relative;
+  padding-bottom: var(--space-2);
+}
+
+.subsection-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-primary);
 }
 
 .no-results {

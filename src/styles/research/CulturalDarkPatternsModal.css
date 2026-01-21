@@ -1,0 +1,68 @@
+/* Cultural Dark Patterns Modal Specific Styles */
+.cultural-dark-patterns-modal .research-image-wrapper {
+  margin: var(--space-5) auto;
+  max-width: 900px;
+}
+
+.cultural-dark-patterns-modal .research-questions-list.cultural-questions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.cultural-dark-patterns-modal .research-question-item.cultural-question {
+  border-left-width: 5px;
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.cultural-dark-patterns-modal .question-type.primary {
+  color: var(--color-error);
+  border-left-color: var(--color-error);
+}
+
+.cultural-dark-patterns-modal .question-type.secondary {
+  color: var(--color-warning);
+  border-left-color: var(--color-warning);
+}
+
+.cultural-dark-patterns-modal .question-type.tertiary {
+  color: var(--color-secondary);
+  border-left-color: var(--color-secondary);
+}
+
+.cultural-dark-patterns-modal .question-type.ethical {
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+  font-weight: 700;
+}
+
+.cultural-dark-patterns-modal .research-question-item.cultural-question.primary {
+  border-left-color: var(--color-error);
+}
+
+.cultural-dark-patterns-modal .research-question-item.cultural-question.secondary {
+  border-left-color: var(--color-warning);
+}
+
+.cultural-dark-patterns-modal .research-question-item.cultural-question.tertiary {
+  border-left-color: var(--color-secondary);
+}
+
+.cultural-dark-patterns-modal .research-question-item.cultural-question.ethical {
+  border-left-color: var(--color-primary);
+}
+
+.cultural-dark-patterns-modal .method-paragraph {
+  margin-bottom: var(--space-4);
+}
+
+.cultural-dark-patterns-modal .materials-table {
+  box-shadow: var(--shadow-md);
+}
+
+.cultural-dark-patterns-modal .audience-group {
+  border-left: 4px solid var(--color-primary);
+  background: linear-gradient(90deg, var(--bg-secondary) 0%, transparent 100%);
+}
+

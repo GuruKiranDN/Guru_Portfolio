@@ -14,6 +14,11 @@
   gap: var(--space-3);
 }
 
+.footer-logo .logo-image {
+  height: 32px;
+  width: auto;
+}
+
 .footer-logo .logo-text {
   font-size: var(--text-lg);
   font-weight: 700;

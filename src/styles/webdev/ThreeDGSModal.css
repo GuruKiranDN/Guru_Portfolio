@@ -1,0 +1,16 @@
+/* ThreeDGS Modal Specific Styles */
+.three-dgs-modal .webdev-images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.three-dgs-modal .webdev-image-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.three-dgs-modal .webdev-image-container {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
